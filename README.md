@@ -1,6 +1,6 @@
 ## Google Review Scraper Microservice
-
-This microservice provides Google reviews and star ratings scraped into a JSON string where the key ‘rating’ is the number of the star ratings and the key ‘text’ is the review text.
+This microservice is live at https://google-review-scraper.herokuapp.com/ \
+It provides Google reviews and star ratings scraped into a JSON string where the key ‘rating’ is the number of the star ratings and the key ‘text’ is the review text.
 
   e.g.)
 ```
