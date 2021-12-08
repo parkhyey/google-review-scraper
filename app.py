@@ -41,12 +41,5 @@ def reviews(place_id):
 
 # Listener
 if __name__ == "__main__":
-    # app.run()
-    ON_HEROKU = os.environ.get('ON_HEROKU')
-    if ON_HEROKU:
-        # get the heroku port
-        port = int(os.environ.get('PORT', 17995))  # as per OP comments default is 17995
-    else:
-        port = 3000
-    app.run(port=port, debug=True) # Use 'python app.py' or 'flask run' to run in terminal
-    
+    port = int(os.environ.get("PORT", 17995))
+    app.run(host='0.0.0.0', port=port)
