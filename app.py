@@ -17,7 +17,7 @@ def home():
 
 @app.route('/<place_id>', methods=['GET'])
 def reviews(place_id):
-    gmaps = googlemaps.Client(key='YOUR_GOOGLE_API_KEY')  # personal google API key
+    gmaps = googlemaps.Client(key='AIzaSyDj7clChH8kmGTe5uga8JUz21Q0AAm_9iA')  # personal google API key
     
     # retrieve info about the place_id
     place = gmaps.place(place_id=place_id)  # find place_id at https://developers.google.com/places/place-id
