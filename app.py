@@ -18,11 +18,13 @@ def home():
 
 @app.route('/<place_id>', methods=['GET'])
 def reviews(place_id):
-    gmaps = googlemaps.Client(key='AIzaSyDj7clChH8kmGTe5uga8JUz21Q0AAm_9iA')  # personal google API key
+    # use personal google API key
+    gmaps = googlemaps.Client(key='AIzaSyDj7clChH8kmGTe5uga8JUz21Q0AAm_9iA')  
     
-    # retrieve info about the place_id
-    place = gmaps.place(place_id=place_id)  # find place_id at https://developers.google.com/places/place-id
-    reviews = []  # empty list to hold dictionaries of reviews
+    # find place_id at https://developers.google.com/places/place-id
+    place = gmaps.place(place_id=place_id) 
+    # empty list to hold dictionaries of reviews
+    reviews = []  
 
     # pull only reviews and star ratings
     for i in range(len(place['result']['reviews'])):
@@ -30,10 +32,12 @@ def reviews(place_id):
         rating = place['result']['reviews'][i]['rating']
         
         # customize response
-        if rating >= 4:  # set star ratings criteria
+        # set star ratings criteria
+        if rating >= 4:  
             reviews.append({'rating': rating,
                             'text': text})
-        if len(reviews) == 10:  # number of reviews to retrieve
+        # number of reviews to retrieve
+        if len(reviews) == 10:  
             break
     response = jsonify(reviews)
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -41,5 +45,5 @@ def reviews(place_id):
 
 # Listener
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 55765))
+    port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
