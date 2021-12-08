@@ -4,10 +4,8 @@ This microservice provides Google reviews and star ratings scraped into a JSON s
 
   e.g.)
   
-    [{"rating":5,"text":"Love this place so much but sometimes out of PSLs on mobile app even though they have it in store"},
-    {"rating":5,"text":"Nikky and team are very nice and always make my drink perfect."},
-    {"rating":5,"text":"Nice cozy little place in Williamsburg. Gives a perfect coffeehouse vibe"},
-    {"rating":5,"text":"Spacious area that has ample room to sit and work. The staff was really nice too!"}]
+    [{"rating":5,"text":"We booked our Maldives honeymoon through Maldives Resorts and we were very pleased with it. They handed all our many questions and provided great accommodation for a good price."},
+    {"rating":5,"text":"loved It so much!!!!!! saw a couple of sharks. but it was bloody fantastic"}]
 
 #### # Sample Integration
 ![image](https://user-images.githubusercontent.com/71689421/145152941-1bfa7eb5-fd1f-4be1-8860-1ea2ede602b7.png)
