@@ -53,7 +53,7 @@ $ git add . && git commit -m 'initial deploy'
 now everything is in the local repository \
 we need to add our remote repository in order to push that to heroku
 ```
-$ heroku git:remote -a google-review-scraper
+$ heroku git:remote -a <heroku_app_name>
 $ git push heroku master 
 ```
 if the push gives an error, try below
