@@ -41,5 +41,5 @@ def reviews(place_id):
 
 # Listener
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 17995))
+    port = int(os.environ.get("PORT", 55765))
     app.run(host='0.0.0.0', port=port)
