@@ -29,10 +29,14 @@ kill 13067
 ```
 You will see 4 or 5 digit integers on the left, and you might also see your username if you read further down the line. The very first number is the number of the main gunicorn process we want to kill. 
 
-#### # How to deploy with Heroku
+## How to deploy with Heroku
 vs code > terminal > Git Bash
 ```
 $ heroku login
+```
+create heroku app (you can also do this at heroku.com)
+```
+$ heroku create <heroku_app_name>
 ```
 create **Procfile** 
 > web: gunicorn app:app \
