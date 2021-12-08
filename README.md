@@ -9,8 +9,11 @@ This microservice provides Google reviews and star ratings scraped into a JSON s
     {"rating":5,"text":"Nice cozy little place in Williamsburg. Gives a perfect coffeehouse vibe"},
     {"rating":5,"text":"Spacious area that has ample room to sit and work. The staff was really nice too!"}]
 
+#### # Sample Integration
+![image](https://user-images.githubusercontent.com/71689421/145152941-1bfa7eb5-fd1f-4be1-8860-1ea2ede602b7.png)
+
 ## How to run Flask script persistantly
-### To run gunicorn:
+#### # To run gunicorn:
 
   Install virtual environment and 
     python3 -m venv env
@@ -25,7 +28,7 @@ This microservice provides Google reviews and star ratings scraped into a JSON s
 
     gunicorn --bind 0.0.0.0:<your-desired-port-here> wsgi:app -D
 
-### To kill gunicorn:
+#### # To kill gunicorn:
   ps ax | grep gunicorn
   
       13067 ?        S      0:00 /nfs/stak/users/yourname/foldername/env/bin/python3 /nfs/stak/users/yourname/foldername/env/bin/gunicorn --bind 0.0.0.0:12345 wsgi:app -D
