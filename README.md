@@ -8,4 +8,5 @@ It provides Google reviews and star ratings scraped into a JSON string where the
 {"rating":5,"text":"loved It so much!!!!!! saw a couple of sharks. but it was bloody fantastic"}]
 ```
 #### # Sample Integration
+Find how to integrate this microservice at https://github.com/parkhyey/flask-api-website
 ![image](https://user-images.githubusercontent.com/71689421/145152941-1bfa7eb5-fd1f-4be1-8860-1ea2ede602b7.png)
